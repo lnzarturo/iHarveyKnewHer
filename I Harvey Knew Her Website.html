@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iHarveyKnewHer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: #000000; /* Set text color to black */
+            font-family: 'Arimo', sans-serif; /* Set font to Arimo */
+        }
+
+        #background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place the background image behind other content */
+        }
+
+        #videos-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .video {
+            width: 30%;
+        }
+
+        #video-text-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .video-text {
+            width: 30%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>iHarveyKnewHer</h1>
+
+    <img id="background-image" src="../Documents/iHarveyKnewHerWebsite/harvey webiste greenscreen wall.png" width="1823" height="1065" alt=""/>
+
+    <div id="videos-container">
+        <div class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed//SzSEmDw99Ak?si=ZpHpSCZvZg4VW3sC" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed//4V-OxtOCfZ4?si=rqhyiIgXHzg_lszl" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed//EaAopZpU7wQ?si=r_fLRHVxqKaRGnI8" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="video-text-container">
+        <div class="video-text">
+            <p>Part 1</p>
+        </div>
+        <div class="video-text">
+            <p>Part 2</p>
+        </div>
+        <div class="video-text">
+            <p>Part 3</p>
+        </div>
+    </div>
+
+</body>
+</html>
