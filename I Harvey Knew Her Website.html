@@ -29,6 +29,7 @@
 
         #videos-container {
             display: flex;
+            flex-wrap: wrap; /* Allow videos to wrap to the next line on smaller screens */
             justify-content: space-between;
             max-width: 1200px;
             width: 100%;
@@ -37,6 +38,7 @@
 
         .video {
             width: 30%;
+            margin-bottom: 20px; /* Add space between videos on smaller screens */
         }
 
         #video-text-container {
@@ -50,6 +52,17 @@
         .video-text {
             width: 30%;
             text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            /* Apply styles only when the screen width is 768 pixels or less (typical for mobile devices) */
+            #videos-container {
+                flex-direction: column; /* Stack videos vertically on smaller screens */
+            }
+
+            .video {
+                width: 100%; /* Make videos full width on smaller screens */
+            }
         }
     </style>
 </head>
